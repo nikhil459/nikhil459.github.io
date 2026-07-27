@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sai Nikhil Kandukuri – Senior Software Engineer</title>
+<title>Sai Nikhil Kandukuri | Senior Software Engineer – Full Stack & AI</title>
+<meta name="description" content="Portfolio of Sai Nikhil Kandukuri, a Senior Software Engineer specializing in React, Next.js, Python, .NET, cloud-native systems, RAG pipelines, LLM integrations, and agentic AI workflows." />
+<meta name="keywords" content="Senior Software Engineer, Full Stack Engineer, AI Engineer, React, Next.js, Python, FastAPI, .NET, LLM, RAG, Agentic AI, Azure, Kubernetes" />
+<meta name="author" content="Sai Nikhil Kandukuri" />
+<meta property="og:title" content="Sai Nikhil Kandukuri | Senior Software Engineer – Full Stack & AI" />
+<meta property="og:description" content="Production-focused full stack and AI engineering across fintech, banking, and enterprise platforms." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://nikhil459.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#0a0e14" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -430,6 +439,65 @@
   }
   .highlight p{color:var(--text-dim);font-size:14.5px;line-height:1.65}
 
+
+  /* AI WORK */
+  .ai-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+  .ai-card{
+    background:linear-gradient(145deg,var(--panel) 0%,var(--panel-2) 100%);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:30px;
+    transition:all .3s;
+    position:relative;
+    overflow:hidden;
+  }
+  .ai-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(125,211,160,0.35);
+    box-shadow:0 18px 45px rgba(0,0,0,0.22);
+  }
+  .ai-card::after{
+    content:'';
+    position:absolute;
+    width:120px;height:120px;border-radius:50%;
+    right:-45px;top:-45px;
+    background:radial-gradient(circle,rgba(125,211,160,0.12),transparent 70%);
+  }
+  .ai-kicker{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--accent);
+    font-size:11px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  .ai-card h3{
+    font-family:'Fraunces',serif;
+    font-size:24px;
+    margin-bottom:12px;
+    letter-spacing:-0.4px;
+  }
+  .ai-card p{
+    color:var(--text-dim);
+    font-size:14.5px;
+    line-height:1.7;
+    margin-bottom:18px;
+  }
+  .tech-tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tech-tag{
+    font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;
+    color:var(--text-dim);
+    border:1px solid var(--border-strong);
+    background:rgba(255,255,255,0.025);
+    border-radius:100px;
+    padding:6px 9px;
+  }
+
   /* CONTACT */
   .contact-card{
     background:linear-gradient(145deg,var(--panel) 0%,var(--panel-2) 100%);
@@ -498,7 +566,7 @@
   /* RESPONSIVE */
   @media (max-width:900px){
     .hero-grid,.about-grid{grid-template-columns:1fr;gap:48px}
-    .highlights,.contact-grid{grid-template-columns:1fr}
+    .highlights,.contact-grid,.ai-grid{grid-template-columns:1fr}
     .nav-links{display:none}
     section{padding:80px 0}
     .contact-card{padding:40px 24px}
@@ -518,6 +586,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#ai-work">AI Work</a></li>
       <li><a href="#highlights">Highlights</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -529,19 +598,19 @@
   <div class="container">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Available for senior roles</span>
+        <span class="eyebrow">Open to senior engineering roles · 2026</span>
         <h1>Sai Nikhil <span class="accent">Kandukuri</span></h1>
         <p class="role">
-          Senior Software Engineer specializing in <strong>Full Stack + AI</strong> — shipping
-          production-grade React, Next.js and Python systems with LLMs, RAG pipelines, and
-          agentic workflows for fintech and enterprise platforms.
+          Senior Software Engineer specializing in <strong>Full Stack + AI</strong> — building
+          production-grade React, Next.js, Python and .NET systems with LLM integrations,
+          RAG pipelines, intelligent validation, and agentic workflows for fintech and enterprise platforms.
         </p>
         <div class="cta-row">
           <a href="#contact" class="btn btn-primary">
             Get in touch
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="#experience" class="btn btn-ghost">View experience</a>
+          <a href="#ai-work" class="btn btn-ghost">Explore AI work</a>
         </div>
         <div class="socials">
           <a href="https://www.linkedin.com/in/nikhilk-0456/" target="_blank" aria-label="LinkedIn">
@@ -559,8 +628,8 @@
         <div class="card-tag">// Career snapshot</div>
         <div class="stat-grid">
           <div class="stat">
-            <div class="num">6+</div>
-            <div class="label">Years building production systems</div>
+            <div class="num">100+</div>
+            <div class="label">Enterprise features delivered</div>
           </div>
           <div class="stat">
             <div class="num">50%</div>
@@ -603,8 +672,9 @@
         </p>
         <p>
           I've led microfrontend and microservices migrations, mentored engineers, and shipped
-          secure cloud-native systems on Azure and Kubernetes. Currently exploring how AI-assisted
-          development can compound team velocity without compromising code quality.
+          secure cloud-native systems on Azure and Kubernetes. In 2026, my focus is practical AI engineering: grounding LLMs with enterprise data,
+          designing reliable RAG systems, adding guardrails and validation, and using AI-assisted
+          development to improve delivery speed without lowering engineering standards.
         </p>
       </div>
       <div class="quick-facts">
@@ -798,6 +868,56 @@
   </div>
 </section>
 
+
+<!-- AI WORK -->
+<section id="ai-work">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// AI Engineering · 2026</span>
+      <h2>Practical AI built for <span class="accent">production</span></h2>
+      <p class="section-sub">My AI work focuses on useful, grounded systems: connecting models to enterprise data, improving workflow intelligence, and designing guardrails that make AI dependable.</p>
+    </div>
+
+    <div class="ai-grid">
+      <article class="ai-card">
+        <div class="ai-kicker">Retrieval-Augmented Generation</div>
+        <h3>Enterprise RAG Pipelines</h3>
+        <p>Designing retrieval workflows that combine LLMs with trusted business content using embeddings, vector search, chunking, metadata filters, and grounded response generation.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">OpenAI</span><span class="tech-tag">Anthropic</span><span class="tech-tag">pgvector</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Python</span>
+        </div>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-kicker">Intelligent Workflows</div>
+        <h3>LLM-Based Validation</h3>
+        <p>Integrating AI-assisted validation into application workflows to improve data quality, reduce manual review effort, and support smarter operational decision-making.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">FastAPI</span><span class="tech-tag">Structured Output</span><span class="tech-tag">Prompt Guardrails</span><span class="tech-tag">Human Review</span>
+        </div>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-kicker">Agentic Systems</div>
+        <h3>Tool-Using AI Agents</h3>
+        <p>Exploring agentic workflows that can reason across multiple steps, call approved tools, retrieve context, and complete bounded tasks with clear observability and controls.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Agents</span><span class="tech-tag">Tool Calling</span><span class="tech-tag">Workflow Orchestration</span><span class="tech-tag">Evaluation</span>
+        </div>
+      </article>
+
+      <article class="ai-card">
+        <div class="ai-kicker">AI-Assisted Engineering</div>
+        <h3>Faster Delivery, Same Standards</h3>
+        <p>Using Copilot, Cursor, and LLM-assisted development for code generation, test creation, debugging, refactoring, and documentation while preserving review, testing, and security practices.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">GitHub Copilot</span><span class="tech-tag">Cursor</span><span class="tech-tag">Automated Tests</span><span class="tech-tag">Code Review</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- HIGHLIGHTS -->
 <section id="highlights" style="background:var(--bg-2)">
   <div class="container">
@@ -841,7 +961,7 @@
         <span class="section-tag">// Get in touch</span>
         <h2>Let's build something <span class="accent">worth shipping</span></h2>
         <p class="section-sub" style="max-width:560px;margin:0 auto">
-          Open to senior engineering roles where full-stack depth and pragmatic AI integration meet. I'd love to hear what you're working on.
+          Open to senior engineering roles in 2026 where full-stack depth, cloud engineering, and practical AI integration come together.
         </p>
 
         <div class="contact-grid">
@@ -877,7 +997,7 @@
 
 <footer>
   <div class="container">
-    Designed &amp; built by Sai Nikhil Kandukuri <span class="heart">●</span> © 2026
+    Designed &amp; built by Sai Nikhil Kandukuri <span class="heart">●</span> © 2026 · Updated July 2026
   </div>
 </footer>
 
